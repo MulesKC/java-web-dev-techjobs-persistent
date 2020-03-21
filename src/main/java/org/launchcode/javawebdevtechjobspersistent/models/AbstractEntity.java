@@ -15,10 +15,10 @@ public abstract class AbstractEntity {
     @GeneratedValue
     private int id;
 
-
     @NotBlank
     @Size(max = 120, message = "Too many characters.")
     private String name;
+
 
     public int getId() {
         return id;
