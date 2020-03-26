@@ -12,4 +12,7 @@
     DROP TABLE job;
 
 ## Part 4: Test it with SQL
-    
+    SELECT skill.name, skill.description
+    FROM skill
+    LEFT JOIN job_skills on (skill.id = job_skills.skills_id)
+    WHERE job_skills.skills_id IS NOT NULL;
